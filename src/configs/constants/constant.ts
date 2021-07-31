@@ -2,7 +2,11 @@ export const ROUTE = {
   landingPage: "/",
 };
 
-export const dataAPIs = {};
+export const dataAPIs = {
+  initialAPI: "https://jsonplaceholder.typicode.com/posts",
+  pagination: "https://jsonplaceholder.typicode.com/posts?_start=",
+  limit: "_limit",
+};
 
 export const dummyData = [
   {

@@ -6,6 +6,14 @@
   height: fit-content;
   background-color: $background_primary;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  .page_title {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 24px;
+    margin: 0 auto;
+  }
   .wrapper {
     height: fit-content;
     display: flex;
@@ -20,5 +28,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 400px;
+    overflow: scroll;
   }
 }
