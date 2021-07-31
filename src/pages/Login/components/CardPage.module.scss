@@ -1,8 +1,11 @@
+@import "src/styles/global.scss";
+
 .container {
   display: flex;
   width: 100%;
   height: fit-content;
-  background-color: #f4f6f8;
+  background-color: $background_primary;
+  padding-top: 40px;
   .wrapper {
     height: fit-content;
     display: flex;
@@ -10,11 +13,12 @@
     width: 1200px;
     margin: 0 auto;
     margin-bottom: 100px;
-    padding-top: 32px;
-    .card {
-      color: rgb(78, 29, 29);
-      font-size: 20px;
-      font-weight: 700;
-    }
+    padding: 32px;
+    background-color: $background_white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 $box_shadow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

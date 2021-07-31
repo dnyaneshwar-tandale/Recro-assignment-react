@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./CardPage.module.scss";
-import { ROUTE } from "../../../configs/constants/constant";
+import { dummyData, ROUTE } from "../../../configs/constants/constant";
 import { useHistory } from "react-router";
+import ProductCard from "../../../components/ProductCard/ProductCard";
 const CardPage = () => {
   const history = useHistory();
   const onSubmit = () => {
@@ -12,7 +13,9 @@ const CardPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.card}>Product Cards</div>
+        {(dummyData || []).map((card) => {
+          return <ProductCard card={card} />;
+        })}
       </div>
     </div>
   );

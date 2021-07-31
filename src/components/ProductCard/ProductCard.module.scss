@@ -1,0 +1,51 @@
+@import "src/styles/global.scss";
+
+.card {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  border: 1px solid $border_gray;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 $box_shadow;
+  margin: 16px;
+  width: 322px;
+  overflow-wrap: break-word;
+  background: $background_gray;
+  .title {
+    font-size: 14px;
+    color: $text_title;
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px $border_white solid;
+    margin: 16px;
+    height: 40px;
+  }
+  .id {
+    font-size: 20px;
+    color: $text_light_red;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px $border_white solid;
+    margin: 16px;
+  }
+  .description {
+    font-size: 16px;
+    color: $text_desc;
+    font-weight: normal;
+    padding-bottom: 20px;
+    text-align: center;
+    .show_text {
+      color: $text_blue;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
